@@ -20,5 +20,7 @@ class Predict(Resource):
 api.add_resource(Predict, "/predict")
 
 if __name__ == "__main__":
+    ## Uncomment for flask only (no docker container)
     # app.run(debug=True)
+    ## Comment out for flask only (no docker container)
     app.run(host="0.0.0.0", port=8080)
